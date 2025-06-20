@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:clean": "rimraf .next && next build",
     "start": "next start",
     "lint": "next lint",
     "build:analyze": "ANALYZE=true npm run build",
@@ -42,7 +43,8 @@
     "@types/js-cookie": "^3.0.6",
     "autoprefixer": "^10.4.20",
     "class-variance-authority": "^0.7.1",
-    "clsx": "^2.1.1",    "cmdk": "1.0.4",
+    "clsx": "^2.1.1",
+    "cmdk": "1.0.4",
     "date-fns": "4.1.0",
     "date-fns-tz": "^3.2.0",
     "embla-carousel-react": "8.5.1",
@@ -57,7 +59,8 @@
     "react-hook-form": "^7.54.1",
     "react-resizable-panels": "^2.1.7",
     "recharts": "2.15.0",
-    "socket.io-client": "^4.8.1",    "sonner": "^1.7.1",
+    "socket.io-client": "^4.8.1",
+    "sonner": "^1.7.1",
     "tailwind-merge": "^2.5.5",
     "tailwindcss-animate": "^1.0.7",
     "vaul": "^1.0.0",
@@ -68,6 +71,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "postcss": "^8",
+    "rimraf": "^6.0.1",
     "tailwindcss": "^3.4.17",
     "typescript": "^5"
   }

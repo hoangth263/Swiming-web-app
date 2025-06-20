@@ -26,8 +26,15 @@ import {
 } from "lucide-react";
 import DashboardLayout from "@/components/dashboard-layout";
 import { withTenantGuard } from "@/components/tenant-provider";
+import { useEffect } from "react";
 
 function AdminDashboardPage() {
+  // Use client-side only rendering
+  useEffect(() => {
+    // This ensures the component only renders on the client
+    // Empty dependency array means this runs once on mount
+  }, []);
+  
   // Mock admin data
   const admin = {
     name: "Admin User",

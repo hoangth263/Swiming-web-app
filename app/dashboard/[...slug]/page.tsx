@@ -6,24 +6,24 @@ import { getAuthenticatedUser } from "@/api/auth-utils";
 import { getUserFrontendRole } from "@/api/role-utils";
 
 // Import all dashboard components
-import ManagerDashboard from "./manager/page";
-import InstructorDashboard from "./instructor/page";
-import StudentDashboard from "./student/page";
+import ManagerDashboard from "../manager/page";
+import InstructorDashboard from "../instructor/page";
+import StudentDashboard from "../student/page";
 
 // Import all manager pages
-import ManagerStudentsPage from "./manager/students/page";
-import ManagerStudentDetailPage from "./manager/students/[id]/page";
-import ManagerInstructorsPage from "./manager/instructors/page";
-import ManagerInstructorDetailPage from "./manager/instructors/[id]/page";
-import ManagerCoursesPage from "./manager/courses/page";
-import ManagerApplicationsPage from "./manager/applications/page";
-import ManagerApplicationDetailPage from "./manager/applications/[id]/page";
-import ManagerAnalyticsPage from "./manager/analytics/page";
-import ManagerPromotionsPage from "./manager/promotions/page";
-import ManagerSettingsPage from "./manager/settings/page";
-import ManagerNotificationsPage from "./manager/notifications/page";
-import ManagerNotificationDetailPage from "./manager/notifications/[id]/page";
-import ManagerReportsPage from "./manager/reports/page";
+import ManagerStudentsPage from "../manager/students/page";
+import ManagerStudentDetailPage from "../manager/students/[id]/page";
+import ManagerInstructorsPage from "../manager/instructors/page";
+import ManagerInstructorDetailPage from "../manager/instructors/[id]/page";
+import ManagerCoursesPage from "../manager/courses/page";
+import ManagerApplicationsPage from "../manager/applications/page";
+import ManagerApplicationDetailPage from "../manager/applications/[id]/page";
+import ManagerAnalyticsPage from "../manager/analytics/page";
+import ManagerPromotionsPage from "../manager/promotions/page";
+import ManagerSettingsPage from "../manager/settings/page";
+import ManagerNotificationsPage from "../manager/notifications/page";
+import ManagerNotificationDetailPage from "../manager/notifications/[id]/page";
+import ManagerReportsPage from "../manager/reports/page";
 
 export default function DashboardCatchAllPage() {
   const params = useParams();
